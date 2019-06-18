@@ -1,6 +1,7 @@
 import React from 'react';
 
-import goats from './goats';
+import myGoats from './goats';
+import GoatCorral from '../components/GoatCorral/GoatCorral';
 
 import './App.scss';
 
@@ -10,15 +11,15 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({goats})
+    this.setState({ goats: myGoats })
   }
 
   render() {
-    // javascripty things here
+    const { goats } = this.state;
     return (
       <div className="App">
         <div className="">Goat yoga</div>
-        {/* <GoatCorral goats={goats}/> */}
+        <GoatCorral goats={goats}/>
       </div>
     );
   }

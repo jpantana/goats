@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="">Goat yoga</div>
-        <GoatCorral goats={goats}/>
+        <GoatCorral goats={ goats }/>
       </div>
     );
   }
